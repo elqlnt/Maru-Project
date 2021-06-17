@@ -1,0 +1,70 @@
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>れんしゅう！！</title>
+    <link rel='stylesheet' href='style.css' type="text/css">
+    <link rel='stylesheet' href='popup.css' type="text/css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./tabulator-master/dist/css/tabulator.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./tabulator-master/dist/js/tabulator.min.js"></script>
+    <script type="text/javascript" src="./tabulator-master/dist/js/jquery_wrapper.min.js"></script>
+    <script src='script.js'></script>
+    <script src='popup.js'></script>
+    <!--<script src='./JsonToHtmlTable-master/jsonToHtmlTable.js'></script>-->
+
+<body>
+    <h1>Hello, Asazu!</h1>
+
+    <!--
+        data input
+    -->
+    <form action="#" method="keys">
+    	<p>user<br>
+    	<input type="text" name="user" size="30"></p>
+    	<p>what<br>
+    	<input type="text" name="what" size="30"></p>
+        <p>when<br>
+        <input type="text" name="when" size="30"></p>
+        <p>where<br>
+    	<input type="text" name="where" size="30"></p>
+        <p>who<br>
+        <input type="text" name="who" size="30"></p>
+	</form>
+
+    <!--
+        api button
+    -->
+    <div>
+        <div onclick="call_api('SCAN')" class="btn btn--orange btn--radius">
+            <p id="button_SCAN">SCAN</p>
+        </div>
+        <div onclick="testfunc()" class="btn btn--orange btn--radius">
+            <p  id="button_PUT">PUT</p>
+        </div>
+        <div onclick="testfunc()" class="btn btn--orange btn--radius">
+            <p  id="button_QUERY">QUERY</p>
+        </div>
+    </div>
+
+    <!--
+        show result
+    -->
+    <div class="popup" id="js-popup">
+        <div class="popup-inner">
+          <div class="close-btn" id="js-close-btn"><i class="fas fa-times"></i></div>
+          <div id="data-table"></div>
+        </div>
+        <div class="black-background" id="js-black-bg"></div>
+      </div>
+
+    <a href='https://twitter.com/uecauec'><img src="1611585375069_Original.jpg"><a>
+</body>
+<!--
+    return button
+-->
+</html>

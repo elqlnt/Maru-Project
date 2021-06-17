@@ -1,0 +1,92 @@
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>れんしゅう！！</title>
+    <link rel='stylesheet' href='style.css' type="text/css">
+    <link rel='stylesheet' href='popup.css' type="text/css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./tabulator-master/dist/css/tabulator.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    
+<body>
+    <h1>Hello, Asazu!</h1>
+
+    <!--
+        data input
+    -->
+    <form action="#" method="keys">
+    	<p>user<br>
+            <select name="user" id = "user_input" class="pulldown">
+                <option value="asa-hide">asa-hide</option>
+                <option value="デスブリ">デスブリ</option>
+                <option value="elqlnt">elqlnt</option>
+                <option value="ふじしろ">ふじしろ</option>
+                <option value="inamuraaan">inamuraaan</option>
+                <option value="伊藤隆介">伊藤隆介</option>
+                <option value="kmshun">kmshun</option>
+                <option value="くま">くま</option>
+                <option value="Masahiro Miyakami">Masahiro Miyakami</option>
+                <option value="nicorasu">nicorasu</option>
+                <option value="office LADY">office LADY</option>
+                <option value="kaimu">kaimu</option>
+                <option value="sugar">sugar</option>
+                <option value="TaG">TaG</option>
+                <option value="Yasu">Yasu</option>
+            </select>
+    	<p>what<br>
+    	<input type="text" id = "what_input" name="what" size="30px"></p>
+        <p>when<br>
+        <input type="text" id = "when_input" name="when" size="30px"></p>
+        <p>where<br>
+    	<input type="text" id = "where_input" name="where" size="30px"></p>
+        <p>who<br>
+        <input type="text" id = "who_input" name="who_input" size="30px"></p>
+	</form>
+
+    <!--
+        api button
+    -->
+    <div>
+        <div onclick="call_api('PUT')" class="btn btn--orange btn--radius">
+            <p  id="button_PUT">PUT DATA</p>
+        </div>
+        <div onclick="randomize()" class="btn btn--orange btn--radius">
+            <p  id="button_RANDOMIZE">RANDOMIZE!</p>
+        </div>
+        <!--
+        <div onclick="call_api('SCAN')" class="btn btn--orange btn--radius">
+            <p id="button_SCAN">SCAN</p>
+        </div>
+
+        <div onclick="call_api('QUERY')" class="btn btn--orange btn--radius">
+            <p  id="button_QUERY">QUERY</p>
+        </div>
+        -->
+    </div>
+
+    <!--
+        show result
+    -->
+    <div class="popup" id="js-popup">
+        <div class="popup-inner" id="popup-in">
+          <!--<div class="close-btn" id="js-close-btn"><i class="fas fa-times"></i></div>-->
+          <div id="data-table"></div>
+        </div>
+        <div class="black-background" id="js-black-bg"></div>
+      </div>
+
+    <a href='https://twitter.com/asazuinmyhood'><img src="2021-05-11_22h35_33.png"><a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./tabulator-master/dist/js/tabulator.min.js"></script>
+    <script type="text/javascript" src="./tabulator-master/dist/js/jquery_wrapper.min.js"></script>
+    <script src='script.js'></script>
+    <script src='popup.js'></script>
+    <!--<script src='./JsonToHtmlTable-master/jsonToHtmlTable.js'></script>-->
+</body>
+<!--
+    return button
+-->
+</html>

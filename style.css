@@ -1,0 +1,37 @@
+body {
+  font-family: 'Impact';
+  text-align:center;
+  color : #337079;
+  margin-right: auto;
+  margin-left : auto;
+  background: linear-gradient(-20deg, #ffffff 0%, #f1b5ec 100%);
+}
+
+div {
+  margin:10 auto;
+  text-align:center;
+}
+
+.api_button {
+  text-align:center;
+  cursor: pointer;
+  width: 160px;
+  border: 3px solid #100476;
+  background-color: #337079;
+  margin:0 auto;
+}
+
+.btn--orange,
+a.btn--orange {
+  color: rgb(58, 58, 63);
+  background-color: #eb6100;
+  cursor: pointer;
+  width: 160px;
+  border-radius:30px;
+  display:inline-block;
+  padding: 0px;
+}
+
+.pulldown {
+  width: 245px;
+}
